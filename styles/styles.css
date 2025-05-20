@@ -1,0 +1,258 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente y fondo base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111;
+  color: #eee;
+  line-height: 1.6;
+}
+
+/* ENCABEZADO PRINCIPAL */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #eee;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #333;
+}
+
+/* SUBMENÚ STICKY */
+.subnav {
+  position: sticky;
+  top: 0;
+  background-color: #111;
+  padding: 0.5rem;
+  border-bottom: 1px solid #444;
+  z-index: 999;
+}
+
+.subnav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.subnav a {
+  text-decoration: none;
+  background-color: #222;
+  color: #eee;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #444;
+  transition: all 0.3s ease;
+}
+
+.subnav a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* SECCIÓN CATALOGO / PRODUCTOS */
+#catalogo {
+  padding: 2rem;
+}
+
+#catalogo h2, #catalogo h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+/* Productos */
+.producto {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.producto:hover {
+  transform: scale(1.03);
+  border-color: #555;
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.producto h4, .producto p {
+  margin-bottom: 0.5rem;
+  color: #ddd;
+}
+
+section[id] {
+  margin-top: 3rem;
+}
+
+section[id] .producto {
+  width: 100%;
+  max-width: 250px;
+}
+
+/* Grid responsive horizontal */
+section[id]:not(#catalogo) .producto,
+#catalogo .producto {
+  display: inline-block;
+  margin: 1rem;
+  vertical-align: top;
+}
+
+/* Botones de comprar */
+.btn-comprar {
+  background-color: #f90;
+  color: #000;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-comprar:hover {
+  background-color: #ffa726;
+}
+
+/* SECCIONES GENERALES */
+main {
+  padding: 2rem;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+main p, main li {
+  color: #ccc;
+  margin-bottom: 0.8rem;
+}
+
+/* FORMULARIO CONTACTO */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #eee;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #111;
+  border: 1px solid #444;
+  color: #fff;
+  border-radius: 6px;
+}
+
+form button {
+  background-color: #f90;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #ffa726;
+}
+
+/* UBICACIÓN MAPA */
+iframe {
+  display: block;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 600px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* PREGUNTAS FRECUENTES */
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.faq h3 {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.faq p {
+  margin-bottom: 1.5rem;
+  color: #ccc;
+}
+
+/* FOOTER */
+footer {
+  background-color: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+footer a {
+  color: #ccc;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
