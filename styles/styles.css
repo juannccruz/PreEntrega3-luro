@@ -365,8 +365,23 @@ footer a:hover {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1em;
+  display: inline;
+  border-bottom: 1px solid #ffa726;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .frasetitulo {
   text-align: center;
+}
+
+.Titulo {
+  display: inline;
+  border-bottom: 4px solid #ffa726;
+  font-size: 2.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
