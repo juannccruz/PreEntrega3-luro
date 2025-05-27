@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 
+//implementacion del sass
+$color-primary: #ffa726;
 /* Fuente y fondo base */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -50,7 +52,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #ffa726;
+  background-color: $color-primary;
   color: #000;
 }
 
@@ -81,7 +83,7 @@ nav a:hover {
 }
 
 .subnav a:hover {
-  background-color: #ffa726;
+  background-color: $color-primary;
   color: #000;
 }
 
@@ -155,7 +157,7 @@ section[id]:not(#catalogo) .producto,
 }
 
 .btn-comprar:hover {
-  background-color: #ffa726;
+  background-color: $color-primary;
 }
 
 /* SECCIONES GENERALES */
@@ -215,7 +217,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #ffa726;
+  background-color: $color-primary;
 }
 
 /* UBICACIÓN MAPA */
@@ -294,7 +296,7 @@ footer a:hover {
 
 .preguntas li p {
   display: inline;
-  border-bottom: 1px solid #ffa726;
+  border-bottom: 1px solid $color-primary;
   font-size: 1.2rem;
 }
 
@@ -358,7 +360,7 @@ footer a:hover {
 }
 
 .btn-comprarNuevo:hover {
-  background-color: #ffa726;
+  background-color: $color-primary;
 }
 
 .TituPromo {
@@ -366,7 +368,7 @@ footer a:hover {
   font-size: 2rem;
   margin-bottom: 1em;
   display: inline;
-  border-bottom: 1px solid #ffa726;
+  border-bottom: 1px solid $color-primary;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -388,7 +390,7 @@ footer a:hover {
   display: block;         
   width: 100%;           
   height: 4px;            
-  background-color: #ffa726;  
+  background-color: $color-primary;  
   margin: 1rem auto;
   border-radius: 2px;     
 }
