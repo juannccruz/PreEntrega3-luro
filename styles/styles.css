@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/* Naranja */
 /* Fuente y fondo base */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -312,10 +313,17 @@ footer a:hover {
 
 .productos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 5em;
-  flex-wrap: wrap;
+  max-width: 900px; /* Ajustá este valor según el ancho de tus tarjetas */
+  margin: 0 auto;
+}
+
+.productos > * {
+  flex: 1 1 calc(50% - 5em); /* 2 por fila con el gap en cuenta */
+  max-width: calc(50% - 5em);
 }
 
 .ImagenStore {

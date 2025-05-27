@@ -4,8 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Catálogo - Calle13Wear</title>
-  <link rel="stylesheet" href="../styles/styles.css" />
-
+ 
   <!-- Bootstrap CSS -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -25,24 +24,44 @@
 </head>
 <body>
   <header>
-    <h1><a href="../index.html" class="logo">Calle13Wear</a></h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="catalogo.html">Catálogo</a></li>
-        <li><a href="sobre-nosotros.html">Nosotros</a></li>
-        <li><a href="ubicacion.html">Ubicación</a></li>
-        <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="../index.html">Calle13Wear</a>
+  
+        <button class="navbar-toggler ms-auto d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse custom-menu" id="menuNav">
+          <ul class="navbar-nav ms-auto d-lg-flex flex-lg-row flex-column text-start ps-lg-0 ps-3">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/catalogo.html">Catalogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/sobre-nosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/ubicacion.html">Ubicacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-  </header>
+</header>
 
   <main>
-    <section id="catalogo ">
-      <h2 class="Titulo animate__animated animate__jackInTheBox">Catálogo</h2>
+    <section id="catalogo">
+      <h2 class="Titulo animate__animated animate__bounce">Catálogo</h2>
+      <span class="linea-decorativa"></span>
 
       <!-- Navegación interna sticky -->
-      <nav class="subnav ">
+      <nav class="subnav sticky-nav">
         <ul>
           <li><a href="remeras.html">Remeras</a></li>
           <li><a href="buzos.html">Buzos</a></li>
@@ -51,34 +70,51 @@
       </nav>
 
       <!-- Promociones en el catálogo principal -->
-      <section id="promociones ">
-        <h3 class = "TituPromo ">Promociones</h3>
+      <section id="promociones">
+        <h3 class = "TituPromo">Promociones</h3>
                 
 <section class="productos">
 
 
-        <div class="productos">
-         <div class="card animate__animated animate__rollIn" style="width: 18rem; background-color: #242a34;">
-            <img src="../img/combo buzo+remera.jpg" class="card-img-top" alt="...">
-              <div class="card-body ">
-                  <h5 class="card-title text-white">buzo + remera</h5>
-                  <p class="card-text text-decoration-line-through">$12.000</p>
-                  <p class="card-text ">$10.000</p>
-                  <a href="#" class="btn btn-primary " style="background-color: #ffa726; border: none;">Comprar</a>
-              </div>
-          </div>
-        </div>
+  <div class="card animate__animated animate__backInDown " style="width: 18rem;background-color: #242A34;">
+    <img src="../img/combo buzo+remera.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center ">Buzo + Remera</h5>
+      <p class="card-text text-decoration-line-through">$10000</p>
+      <p class="card-text">$7500</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
 
-        <div class="productos">
-          <div class="card animate__animated animate__rollIn" style="width: 18rem; background-color: #242a34;">
-              <img src="../img/descarga.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <p class="card-text text-decoration-line-through">$10.000</p>
-                  <p class="card-text ">$8.000</p>
-                  <a href="#" class="btn btn-primary" style= "background-color: #ffa726; border: none; ">comprar</a>
-              </div>
-          </div>
-        </div>
+  <div class="card animate__animated animate__backInDown" style="width: 18rem;background-color: #242A34;">
+    <img src="../img/descarga.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center ">Combo 2 Remeras</h5>
+      <p class="card-text text-decoration-line-through">$12000</p>
+      <p class="card-text">$8500</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
+
+  <div class="card animate__animated animate__backInDown" style="width: 18rem;background-color: #242A34;">
+    <img src="../img/img.gorra.zapa.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center ">Combo Remera + Zapatillas</h5>
+      <p class="card-text text-decoration-line-through">$18000</p>
+      <p class="card-text">$15000</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
+
+  <div class="card animate__animated animate__backInDown" style="width: 18rem;background-color: #242A34;">
+    <img src="../img/img.cartera-buzo.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center ">Combo Cartera + Buzp</h5>
+      <p class="card-text text-decoration-line-through">$14000</p>
+      <p class="card-text">$12500</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
 
 
 
@@ -102,12 +138,9 @@
       </a>
     </div>
   </footer>
-
-   <!-- Bootstrap JS Bundle -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76A08ZT1Q0P4M2ABa3z1EuvPp1KkN5FQ3lCkCk0l5l5G9VRdSMHkVtN0I0nN2sq"
-    crossorigin="anonymous"
-  ></script>
+    
+   <!-- Bootstrap CSS  -->
+<!-- Bootstrap JS  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

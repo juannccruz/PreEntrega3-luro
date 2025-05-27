@@ -5,8 +5,9 @@
   box-sizing: border-box;
 }
 
-//implementacion del sass
-$color-primary: #ffa726;
+// Iplementación de SASS
+$color-primary: #ffa726; /* Naranja */
+
 /* Fuente y fondo base */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -313,11 +314,18 @@ footer a:hover {
 
 .productos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 5em;
-  flex-wrap: wrap;
+  max-width: 900px; /* Ajustá este valor según el ancho de tus tarjetas */
+  margin: 0 auto;
 }
+.productos > * {
+  flex: 1 1 calc(50% - 5em); /* 2 por fila con el gap en cuenta */
+  max-width: calc(50% - 5em);
+}
+
 
 .ImagenStore {
   margin-bottom: 1em;
@@ -392,5 +400,6 @@ footer a:hover {
   height: 4px;            
   background-color: $color-primary;  
   margin: 1rem auto;
-  border-radius: 2px;     
+  border-radius:2px;
 }
+

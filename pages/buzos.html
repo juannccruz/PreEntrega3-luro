@@ -4,23 +4,58 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Buzos - Calle13Wear</title>
+ 
+
+   <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- Animate.css -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <!-- Tu CSS personalizado -->
   <link rel="stylesheet" href="../styles/styles.css" />
+
 </head>
 <body>
-  <header>
-    <h1><a href="../index.html" class="logo">Calle13Wear</a></h1>
-    <nav>
-      
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="catalogo.html">Catálogo</a></li>
-        <li><a href="sobre-nosotros.html">Nosotros</a></li>
-        <li><a href="ubicacion.html">Ubicación</a></li>
-        <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li
-      </ul>
-      </nav>
-    
-  </header>
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="../index.html">Calle13Wear</a>
+  
+        <button class="navbar-toggler ms-auto d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse custom-menu" id="menuNav">
+          <ul class="navbar-nav ms-auto d-lg-flex flex-lg-row flex-column text-start ps-lg-0 ps-3">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/catalogo.html">Catalogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/sobre-nosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/ubicacion.html">Ubicacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>
   <nav class="subnav sticky-nav">
   <div class="menu-categorias">
     <a href="remeras.html" class="btn-categoria">Remeras</a>
@@ -36,23 +71,41 @@
     <section class="productos">
 
 
-        <div class="productos">
-          <div class="ContenedorStore">
-            <img class="ImagenStore" src="../img/hoodie bienurb.jpg" alt="">
-            <h2>Buzo urbano</h2>
-            <h3>$10,000</h3>
-            <button class="btn-comprarNuevo">Comprar</button>
-          </div>
-        </div>
+     <div class="card animate__animated animate__backInDown" style="width: 10rem;background-color: #242A34;">
+    <img src="../img/hoodie bienurb.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center">hodie urbano</h5>
+      <p class="card-text">$8.000</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
 
-        <div class="productos">
-          <div class="ContenedorStore">
-            <img class="ImagenStore" src="../img/hoodie rip curl.jpg" alt="">
-            <h2>Hoodie rip curl</h2>
-            <h3>$12.000</h3>
-            <button class="btn-comprarNuevo">Comprar</button>
-          </div>
-        </div>
+       <div class="card animate__animated animate__backInDown" style="width: 18rem;background-color: #242A34;">
+    <img src="../img/hoodie rip curl.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center ">hoodie rip curl</h5>
+      <p class="card-text">$8.000</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
+
+   <div class="card animate__animated animate__backInDown" style="width: 18rem;background-color: #242A34;">
+    <img src="../img/img.buzo.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center ">buzo urbano</h5>
+      <p class="card-text">$8.000</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
+
+   <div class="card animate__animated animate__backInDown" style="width: 18rem;background-color: #242A34;">
+    <img src="../img/img.campera.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center ">campera jean</h5>
+      <p class="card-text">$8.000</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
 
 
 
@@ -75,5 +128,9 @@
       </a>
     </div>
   </footer>
+     
+   <!-- Bootstrap CSS  -->
+<!-- Bootstrap JS  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

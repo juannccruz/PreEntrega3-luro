@@ -5,20 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Todos los Productos - Calle13Wear</title>
   <link rel="stylesheet" href="../styles/styles.css" />
+
+    <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- Animate.css -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <!-- Tu CSS personalizado -->
+  <link rel="stylesheet" href="../styles/styles.css" />
 </head>
 <body>
-  <header>
-    <h1><a href="../index.html" class="logo">Calle13Wear</a></h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="catalogo.html">Catálogo</a></li>
-        <li><a href="sobre-nosotros.html">Nosotros</a></li>
-        <li><a href="ubicacion.html">Ubicación</a></li>
-        <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li
-      </ul>
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="../index.html">Calle13Wear</a>
+  
+        <button class="navbar-toggler ms-auto d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse custom-menu" id="menuNav">
+          <ul class="navbar-nav ms-auto d-lg-flex flex-lg-row flex-column text-start ps-lg-0 ps-3">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/catalogo.html">Catalogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/sobre-nosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/ubicacion.html">Ubicacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-  </header>
+</header>
 <nav class="subnav sticky-nav">
   <div class="menu-categorias">
     <a href="remeras.html" class="btn-categoria">Remeras</a>
@@ -36,23 +72,41 @@
     <section class="productos">
 
 
-        <div class="productos">
-          <div class="ContenedorStore">
-            <img class="ImagenStore" src="../img/images (1).jpg" alt="">
-            <h2>Remera puma</h2>
-            <h3>$6.500</h3>
-            <button class="btn-comprarNuevo">Comprar</button>
-          </div>
-        </div>
+        <div class="card animate__animated animate__backInDown" style="width: 10rem;background-color: #242A34;">
+    <img src="../img/ali-choubin-cn72vaTMZpI-unsplash.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center">remeron urbano</h5>
+      <p class="card-text">$5.000</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
 
-        <div class="productos">
-          <div class="ContenedorStore">
-            <img class="ImagenStore" src="../img/images (2).jpg" alt="">
-            <h2>Remera dragon</h2>
-            <h3>$5.500</h3>
-            <button class="btn-comprarNuevo">Comprar</button>
-          </div>
-        </div>
+  <div class="card animate__animated animate__backInDown" style="width: 10rem;background-color: #242A34;">
+    <img src="../img/images (1).jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center">remera puma</h5>
+      <p class="card-text">$7.000</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
+
+  <div class="card animate__animated animate__backInDown" style="width: 10rem;background-color: #242A34;">
+    <img src="../img/images (2).jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center">remera dragon</h5>
+      <p class="card-text">$6.000</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
+
+  <div class="card animate__animated animate__backInDown" style="width: 10rem;background-color: #242A34;">
+    <img src="../img/kabir-cheema-JnBN8_YpTrI-unsplash.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center">remera roja</h5>
+      <p class="card-text">$5.000</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
 
 
 
@@ -64,23 +118,41 @@
   <section class="productos">
 
 
-        <div class="productos">
-          <div class="ContenedorStore">
-            <img class="ImagenStore" src="../img/hoodie bienurb.jpg" alt="">
-            <h2>Buzo urbano</h2>
-            <h3>$10,000</h3>
-            <button class="btn-comprarNuevo">Comprar</button>
-          </div>
-        </div>
+       <div class="card animate__animated animate__backInDown" style="width: 10rem;background-color: #242A34;">
+    <img src="../img/hoodie bienurb.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center">hodie urbano</h5>
+      <p class="card-text">$8.000</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
 
-        <div class="productos">
-          <div class="ContenedorStore">
-            <img class="ImagenStore" src="../img/hoodie rip curl.jpg" alt="">
-            <h2>Hoodie rip curl</h2>
-            <h3>$12.000</h3>
-            <button class="btn-comprarNuevo">Comprar</button>
-          </div>
-        </div>
+       <div class="card animate__animated animate__backInDown" style="width: 18rem;background-color: #242A34;">
+    <img src="../img/hoodie rip curl.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center ">hoodie rip curl</h5>
+      <p class="card-text">$8.000</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
+
+   <div class="card animate__animated animate__backInDown" style="width: 18rem;background-color: #242A34;">
+    <img src="../img/img.buzo.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center ">buzo urbano</h5>
+      <p class="card-text">$8.000</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
+
+   <div class="card animate__animated animate__backInDown" style="width: 18rem;background-color: #242A34;">
+    <img src="../img/img.campera.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center ">campera jean</h5>
+      <p class="card-text">$8.000</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
 
 
 
@@ -92,23 +164,41 @@
       <section class="productos">
 
 
-        <div class="productos">
-          <div class="ContenedorStore">
-            <img class="ImagenStore" src="../img/jean urbano.jpg" alt="">
-            <h2>Jean Urbano</h2>
-            <h3>$8.000</h3>
-            <button class="btn-comprarNuevo">Comprar</button>
-          </div>
-        </div>
+        <div class="card animate__animated animate__backInDown" style="width: 10rem;background-color: #242A34;">
+    <img src="../img/jean urbano.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center">jean callejero</h5>
+      <p class="card-text">$8.000</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
 
-        <div class="productos">
-          <div class="ContenedorStore">
-            <img class="ImagenStore" src="../img/pantalon cargo urbano.jpg" alt="">
-            <h2>pantalon cargo</h2>
-            <h3>$7.000</h3>
-            <button class="btn-comprarNuevo">Comprar</button>
-          </div>
-        </div>
+  <div class="card animate__animated animate__backInDown" style="width: 10rem;background-color: #242A34;">
+    <img src="../img/pantalon cargo urbano.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center">pantalon cargo</h5>
+      <p class="card-text">$9.000</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
+
+  <div class="card animate__animated animate__backInDown" style="width: 10rem;background-color: #242A34;">
+    <img src="../img/kyle-loftus-d5GlpSOAzzg-unsplash.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center">jean cargo</h5>
+      <p class="card-text">$10.000</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
+
+  <div class="card animate__animated animate__backInDown" style="width: 10rem;background-color: #242A34;">
+    <img src="../img/ap-hakeisolai-J7ZRCa0S1MI-unsplash.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center">jean stampado</h5>
+      <p class="card-text">$10.000</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
 
 
 
@@ -120,25 +210,45 @@
       <section class="productos">
 
 
-        <div class="productos">
-          <div class="ContenedorStore">
-            <img class="ImagenStore" src="../img/combo buzo+remera.jpg" alt="">
-            <h2>Remera + Buzo</h2>
-            <h3 class="viejo">$12000</h3>
-            <h3>$10000</h3>
-            <button class="btn-comprarNuevo">Comprar</button>
-          </div>
-        </div>
+        <div class="card animate__animated animate__backInDown " style="width: 18rem;background-color: #242A34;">
+    <img src="../img/combo buzo+remera.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center ">Buzo + Remera</h5>
+      <p class="card-text text-decoration-line-through">$10000</p>
+      <p class="card-text">$7500</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
 
-        <div class="productos">
-          <div class="ContenedorStore">
-            <img class="ImagenStore" src="../img/descarga.jpg" alt="">
-            <h2>Remera + Buzo</h2>
-            <h3 class="viejo">$12000</h3>
-            <h3>$10000</h3>
-            <button class="btn-comprarNuevo">Comprar</button>
-          </div>
-        </div>
+  <div class="card animate__animated animate__backInDown" style="width: 18rem;background-color: #242A34;">
+    <img src="../img/descarga.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center ">Combo 2 Remeras</h5>
+      <p class="card-text text-decoration-line-through">$12000</p>
+      <p class="card-text">$8500</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
+
+  <div class="card animate__animated animate__backInDown" style="width: 18rem;background-color: #242A34;">
+    <img src="../img/img.gorra.zapa.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center ">Combo Remera + Zapatillas</h5>
+      <p class="card-text text-decoration-line-through">$18000</p>
+      <p class="card-text">$15000</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
+
+  <div class="card animate__animated animate__backInDown" style="width: 18rem;background-color: #242A34;">
+    <img src="../img/img.cartera-buzo.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center" style=" background-color: #242A34;">
+      <h5 class="card-title text-white text-center ">Combo Cartera + Buzp</h5>
+      <p class="card-text text-decoration-line-through">$14000</p>
+      <p class="card-text">$12500</p>
+      <a href="#" class="btn btn-primary" style="background-color: #ffa726; border-color: #ffa726; color: #242A34;">Comprar</a>
+    </div>
+  </div>
 
 
 
@@ -162,5 +272,9 @@
       </a>
     </div>
   </footer>
+  
+   <!-- Bootstrap CSS  -->
+<!-- Bootstrap JS  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
