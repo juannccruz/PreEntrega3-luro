@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset básico */
 * {
   margin: 0;
@@ -7,7 +8,7 @@
 
 /* Fuente y fondo base */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #111;
   color: #eee;
   line-height: 1.6;
@@ -370,7 +371,6 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .frasetitulo {
@@ -385,3 +385,5 @@ footer a:hover {
   justify-content: center;
   align-items: center;
 }
+
+/*# sourceMappingURL=styles.css.map */
